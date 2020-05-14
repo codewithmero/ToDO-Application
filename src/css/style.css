@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.finished {
+    text-decoration: line-through;
+}
+
+button[class="delete-task"] {
+    outline: none;
+}
+
+button[class="delete-task"]::-moz-focus-inner {
+    border: 0;
+}
+
+
+h1, h2, h3, p {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+
+    width: 400px;
+    padding: 10px;
+}
+
+ul li {
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li > p {
+    flex: 1;
+    color: #fff;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+div.task-box {
+    margin-top: 20px;
+    padding: 10px;
+    width: 400px;
+    background: #00aecc;
+}
